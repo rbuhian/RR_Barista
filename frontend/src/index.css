@@ -1,0 +1,56 @@
+/* ── Design Tokens ─────────────────────────────────────── */
+:root {
+  --brown-dark:  #2c1509;
+  --brown-mid:   #5a2d0c;
+  --brown-warm:  #8b4513;
+  --gold:        #b8852a;
+  --gold-light:  #d4a843;
+  --cream:       #f7efe4;
+  --cream-dark:  #ecdcc8;
+  --cream-deep:  #e0c9aa;
+  --white:       #fdfaf6;
+  --text-dark:   #1e0e05;
+  --text-mid:    #4a2810;
+  --text-soft:   #7a5035;
+  --text-muted:  #a07850;
+  --danger:      #b83232;
+  --success:     #2d6a30;
+  --info:        #1a5276;
+  --shadow-sm:   0 2px 8px rgba(44,21,9,.08);
+  --shadow-md:   0 6px 22px rgba(44,21,9,.13);
+  --shadow-lg:   0 14px 40px rgba(44,21,9,.18);
+  --r:           12px;
+  --r-sm:        7px;
+  --t:           .22s ease;
+}
+
+/* ── Reset ──────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream-dark); }
+::-webkit-scrollbar-thumb { background: var(--brown-warm); border-radius: 3px; }
+
+/* ── Utility ────────────────────────────────────────────── */
+button { cursor: pointer; font-family: 'Inter', sans-serif; }
+a { text-decoration: none; }

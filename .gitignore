@@ -1,0 +1,26 @@
+# Build output
+backend/bin/
+backend/obj/
+
+# Database
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+
+# User secrets / local overrides
+backend/appsettings.Local.json
+
+# .NET
+*.user
+*.suo
+.vs/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# OS
+.DS_Store
+Thumbs.db
